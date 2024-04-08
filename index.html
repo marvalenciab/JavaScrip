@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./diseños.css" />
+    <script src="./nasa-apod.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>NASA</title>
+  </head>
+  <body id="Container">
+    <h3 id="h3">Fotografía Astronómica por Fecha</h3>
+
+    <div id="informacion">
+      <input type="date" name="fecha" id="date_fecha">
+      <button id="button_buscar" onclick="obtenerFecha()">Buscar</button>
+    </div>
+
+    <div id="titulo">
+      <p id="title" class="text"></p>
+    </div>
+
+    <div id="imagen">
+      <img src alt id="fotografia" class="img-apod">
+    </div>
+
+    <div id="expli">
+      <p id="explicacion" class="text"></p>
+    </div>
+
+    </div>
+  </body>
+</html>
